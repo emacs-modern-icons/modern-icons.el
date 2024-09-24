@@ -1,0 +1,11 @@
+/tmp/
+*.tmp.*
+*autoloads.el
+
+*.elc
+*.html
+
+icons
+
+/.eask
+/dist
