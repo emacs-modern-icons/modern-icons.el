@@ -35,9 +35,12 @@ From Melpa (PR submitted, pending approval) or manual installation using [straig
 
   ```elisp
   (require 'modern-icons)
-  ;; Choose the packages to display modern icons. See the documentation
-  ;; of `modern-icons-enable-packages' for the list of all supported packages.
+
+  ;; Configure the packages that need to display icons.
+  ;; See the documentation of `modern-icons-enable-packages' for details.
   (setq modern-icons-enable-packages '(corfu dired helm helm-xref lsp treemacs))
+
+  ;; Enable modern-icons
   (modern-icons-enable))
   ```
 
@@ -48,37 +51,37 @@ From Melpa (PR submitted, pending approval) or manual installation using [straig
 - modern-icons-corfu:
 
   <p align="center">
-    <img width="600" alt="Modern Icons for Corfu" src="screenshots/modern-icons-corfu.png"/>
+    <img width="600" alt="Modern icons for Corfu" src="screenshots/modern-icons-corfu.png"/>
   </p>
 
 - modern-icons-dired:
 
   <p align="center">
-    <img width="600" alt="Modern Icons for dired-mode" src="screenshots/modern-icons-dired.png"/>
+    <img width="600" alt="Modern icons for dired-mode" src="screenshots/modern-icons-dired.png"/>
   </p>
 
 - modern-icons-helm (helm-find-files):
 
   <p align="center">
-    <img width="600" alt="Modern Icons for helm-find-files" src="screenshots/modern-icons-helm-find-files.png"/>
+    <img width="600" alt="Modern icons for helm-find-files" src="screenshots/modern-icons-helm-find-files.png"/>
   </p>
 
-- modern-icons-helm (helm-imenu:
+- modern-icons-helm (helm-imenu):
 
   <p align="center">
-    <img width="600" alt="Modern Icons for helm-imenu" src="screenshots/modern-icons-helm-imenu.png"/>
+    <img width="600" alt="Modern icons for helm-imenu" src="screenshots/modern-icons-helm-imenu.png"/>
   </p>
 
 - modern-icons-lsp:
 
   <p align="center">
-    <img width="600" alt="Modern Icons for LSP" src="screenshots/modern-icons-lsp.png"/>
+    <img width="600" alt="Modern icons for LSP" src="screenshots/modern-icons-lsp.png"/>
   </p>
 
 - modern-icons-treemacs:
 
   <p align="center">
-    <img width="600" alt="Modern Icons for treemacs" src="screenshots/modern-icons-treemacs.png"/>
+    <img width="600" alt="Modern icons for treemacs" src="screenshots/modern-icons-treemacs.png"/>
   </p>
 
 ## Integration to new packages?
