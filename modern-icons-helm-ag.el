@@ -31,7 +31,7 @@
 
 ;;; Code:
 
-(require 'modern-icons-core)
+(require 'modern-icons)
 
 (defun modern-icons-helm-ag-advisor (func &rest args)
   "Advice function for `helm-ag' to display icons. FUNC is `helm-ag--filter-one'."

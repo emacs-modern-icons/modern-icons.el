@@ -37,7 +37,7 @@
 ;;; Code:
 
 (require 'dired)
-(require 'modern-icons-core)
+(require 'modern-icons)
 
 (defvar modern-icons-dired-mode)
 

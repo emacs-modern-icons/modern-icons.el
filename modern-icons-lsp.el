@@ -65,22 +65,21 @@
     (26 "template")
     (t "misc")))
 
-(defun modern-icons-lsp-file-icon-advisor (func file-ext &optional feature &rest args)
+(defun modern-icons-lsp-file-icon-advisor (_func file-ext &optional feature &rest _args)
   "Advice function for LSP to display file icons.
-FUNC is a function of `lsp-icons'that returns file icons, such as the
-`lsp-icons-get-by-file-ext' function."
+FUNC is the `lsp-icons-get-by-file-ext' function."
   (when-let* ((_ file-ext)
               (_ (lsp-icons--enabled-for-feature feature))
               (icon (modern-icons-icon-for-file (concat "1." file-ext))))
     (propertize " " 'display icon)))
 
-(defun modern-icons-lsp-symbol-icon-advisor (func kind &optional feature &rest args)
+(defun modern-icons-lsp-symbol-icon-advisor (_func kind &optional feature &rest _args)
   "Advice function for LSP to display symbol icons.
-FUNC is a function of `lsp-icons'that returns file icons, such as the `lsp-icons-get-by-symbol-kind' function."
+FUNC is the `lsp-icons-get-by-symbol-kind' function."
   (when-let* ((_ kind)
               (_ (lsp-icons--enabled-for-feature feature))
               (item-kind (modern-icons-lsp-kind-name kind))
-              (icon (modern-icons-icon-for-code-item item-kind)))
+              (icon (modern-icons-icon-for-code item-kind)))
     (propertize " " 'display icon)))
 
 ;;;###autoload

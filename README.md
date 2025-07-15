@@ -31,16 +31,10 @@ From Melpa (PR submitted, pending approval) or manual installation using [straig
 
 ## Usage
 
-- To enable all integrations and existing features, include the following code into your configuration file:
+- To enable [modern-icons.el](modern-icons.el), include the following code into your configuration file:
 
   ```elisp
   (require 'modern-icons)
-
-  ;; Configure the packages that need to display icons.
-  ;; See the documentation of `modern-icons-enable-packages' for details.
-  (setq modern-icons-enable-packages '(corfu dired helm helm-xref lsp treemacs))
-
-  ;; Enable modern-icons
   (modern-icons-enable))
   ```
 

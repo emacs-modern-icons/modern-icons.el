@@ -31,7 +31,7 @@
 
 ;;; Code:
 
-(require 'modern-icons-core)
+(require 'modern-icons)
 
 (defun modern-icons-helm-xref-advisor (func file &rest args)
   "Advice function for `helm-xref' to display icons.

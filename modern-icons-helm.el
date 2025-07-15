@@ -35,7 +35,7 @@
 ;;; Code:
 
 (require 'dash)
-(require 'modern-icons-core)
+(require 'modern-icons)
 (require 'helm)
 (require 'helm-locate)
 (require 'helm-files)
@@ -67,15 +67,15 @@
                    (modern-icons-icon-for-file buffer-name))))
     (and icon (concat (propertize " " 'display icon) " "))))
 
-(defun modern-icons-helm-mode-icon (mode-name)
+(defun modern-icons-helm-mode-icon (major-mode-name)
   "Get icon for a major mode name."
-  (when-let* ((icon (modern-icons-icon-for-mode mode-name)))
+  (when-let* ((icon (modern-icons-icon-for-mode major-mode-name)))
     (concat (propertize " " 'display icon) " ")))
 
-(defun modern-icons-helm-add-icons (candidates _source)
+(defun modern-icons-helm-add-icons (candidates source)
   "Add icon to a buffer source or a file source.
 CANDIDATES is the list of Helm candidates."
-  (let ((source-name (cdr (assoc 'name _source))))
+  (let ((source-name (cdr (assoc 'name source))))
     ;; (message "SOURCE NAME: %s" source-name)
     (-map
      (-lambda (candidate)
@@ -84,7 +84,6 @@ CANDIDATES is the list of Helm candidates."
               (buffer (cond ((bufferp candidate) candidate)
                             ((stringp candidate) (get-buffer candidate))
                             (t nil)))
-              (bufer-name nil)
               (file-name nil)
               (icon (cond
                      ((equal source-name "Git branches")
@@ -186,7 +185,8 @@ The advised function is `helm-make-source'."
 ;;; Specific configuration for `helm-files'
 
 (defun modern-icons-helm-files-advisor (func disp fname &rest args)
-  "Advise `helm-files' to display icons. The advised function is `helm-ff-prefix-filename'."
+  "Advise `helm-files' to display icons. The advised function is
+`helm-ff-prefix-filename'."
   (let* ((icon (cond ((null args) nil)
                      ((or (string-match "/\\'" disp)
                           (equal helm-buffer "*helm-mode-dired-create-directory*"))
@@ -222,10 +222,10 @@ The advised function is `helm-grep--filter-candidate-1'."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Specific configuration for `helm-imenu'
 
-(defun modern-icons-helm-imenu-advisor (func type &rest args)
+(defun modern-icons-helm-imenu-advisor (_func type &rest _args)
   "Advise `helm-imenu' to display icons.
 The advised function is `helm-imenu-icon-for-type'."
-  (modern-icons-icon-for-code-item type))
+  (modern-icons-icon-for-code type))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Public functions

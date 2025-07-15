@@ -37,7 +37,7 @@
 ;;; Code:
 
 (require 'corfu)
-(require 'modern-icons-core)
+(require 'modern-icons)
 
 ;; Redefine corfu variables to silent warnings
 (defvar corfu-margin-formatters)
@@ -48,7 +48,7 @@
   (and-let* ((kindfunc (plist-get completion-extra-properties :company-kind)))
     (lambda (cand)
       (let* ((kind (format "%s" (funcall kindfunc cand)))
-             (icon (modern-icons-icon-for-code-item kind))
+             (icon (modern-icons-icon-for-code kind))
              (icon-str (propertize " " 'display icon))
              (sep (if (display-graphic-p)
                       ;; Use a narrow whitespace for graphical display
