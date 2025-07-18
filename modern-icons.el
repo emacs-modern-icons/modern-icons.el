@@ -1563,16 +1563,17 @@
   "Association list mapping major mode names to icon names.")
 
 (defvar modern-icons-buffer-regex-icon-alist
-  '(("\\(error\\|errors\\)\\*"          ("symbol-icons"      "error.svg"))
-    ("\\*aidermacs"                     ("app-icons"         "aider.svg"))
+  '(("\\*aidermacs"                     ("app-icons"         "aider.svg"))
     ("\\*copilot chat"                  ("app-icons"         "copilot.svg"))
     ("\\*customize"                     ("symbol-icons"      "settings.svg"))
+    ("\\*format-all-errors"             ("symbol-icons"      "lightbulb.svg"))
     ("\\*messages"                      ("symbol-icons"      "information.svg"))
     ("\\*monky"                         ("file-icons"        "file_mercurial.svg"))
     ("\\*scratch"                       ("app-icons"         "notes.svg"))
     ("\\*temp"                          ("file-icons"        "file_temporary.svg"))
     ("\\*warning"                       ("symbol-icons"      "warning.svg"))
-    ("^commit_editmsg"                  ("file-icons"        "file_git.svg")))
+    ("^commit_editmsg"                  ("file-icons"        "file_git.svg"))
+    ("\\(error\\|errors\\)\\*"          ("symbol-icons"      "error.svg")))
   "Association list mapping buffer name regexes to icon names.")
 
 (defvar modern-icons-code-item-icon-alist

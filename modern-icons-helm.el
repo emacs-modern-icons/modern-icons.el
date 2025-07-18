@@ -144,7 +144,6 @@ The advised function is `helm-make-source'."
                            helm-source-buffers
                            helm-source-ffiles
                            helm-source-findutils
-                           helm-source-in-buffer
                            helm-source-locate
                            helm-source-projectile-buffer))
            (modern-icons-helm-add-transformer #'modern-icons-helm-add-icons result))
