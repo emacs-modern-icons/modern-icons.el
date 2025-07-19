@@ -148,8 +148,11 @@ The advised function is `helm-make-source'."
                            helm-source-projectile-buffer))
            (modern-icons-helm-add-transformer #'modern-icons-helm-add-icons result))
           ((-any? (lambda (source-name) (s-match source-name name))
-                  '("Elisp libraries"
+                  '("Buffers in hg project"
+                    "Elisp libraries"
                     "Find"
+                    "Hg files list"
+                    "Hg status"
                     "Last killed files"
                     "Locate"
                     "Projectile directories"
