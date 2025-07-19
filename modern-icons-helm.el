@@ -140,6 +140,8 @@ The advised function is `helm-make-source'."
     (cond ((member class '(helm-fasd-source
                            helm-ls-git-source
                            helm-ls-git-status-source
+                           helm-ls-git-untracked-ignored-source
+                           helm-ls-git-untracked-source
                            helm-recentf-source
                            helm-source-buffers
                            helm-source-ffiles
