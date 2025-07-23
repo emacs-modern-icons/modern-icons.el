@@ -1576,6 +1576,11 @@
     ("\\(error\\|errors\\)\\*"          ("symbol-icons"      "error.svg")))
   "Association list mapping buffer name regexes to icon names.")
 
+(defvar modern-icons-workspace-regex-icon-alist
+  '(("emacs"                           ("file-icons"        "file_emacs.svg"))
+    ("rust"                            ("file-icons"        "file_rust.svg")))
+  "Association list mapping workspace name regexes to icon names.")
+
 (defvar modern-icons-code-item-icon-alist
   '(("array"                            ("symbol-icons"      "symbol-array.svg"))
     ("arrays"                           ("symbol-icons"      "symbol-array.svg"))
@@ -1730,6 +1735,13 @@ Return NIL if no icon is found."
   (when-let* ((buffer-name (downcase buffer-name))
               (icon-data (cadr (cl-find-if (lambda (it) (string-match (car it) buffer-name))
                                            modern-icons-buffer-regex-icon-alist))))
+    (modern-icons-create-icon (car icon-data) (cadr icon-data))))
+
+(defun modern-icons-icon-for-workspace (workspace-name)
+  "Create an icon for WORKSPACE-NAME. Return NIL if no icon is found."
+  (when-let* ((workspace-name (downcase workspace-name))
+              (icon-data (cadr (cl-find-if (lambda (it) (string-match (car it) workspace-name))
+                                           modern-icons-workspace-regex-icon-alist))))
     (modern-icons-create-icon (car icon-data) (cadr icon-data))))
 
 (defun modern-icons-icon-for-code (code-item-kind)

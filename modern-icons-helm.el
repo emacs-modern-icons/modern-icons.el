@@ -46,30 +46,36 @@
 ;;; General configuration for Helm
 
 (defun modern-icons-helm-file-name-icon (file-name)
-  "Get icon by matching exact FILE_NAME."
+  "Get icon by matching exact FILE-NAME."
   (when-let* ((icon (modern-icons-icon-for-file-name file-name)))
     (concat (propertize " " 'display icon) " ")))
 
 (defun modern-icons-helm-file-ext-icon (file-name)
-  "Get icon by matching the extension of FILE_NAME."
+  "Get icon by matching the extension of FILE-NAME."
   (when-let* ((icon (modern-icons-icon-for-file-ext file-name)))
     (concat (propertize " " 'display icon) " ")))
 
 (defun modern-icons-helm-dir-icon (dir-name)
-  "Get icon by matching DIR_NAME."
+  "Get icon by matching DIR-NAME."
   (when-let* ((icon (or (modern-icons-icon-for-dir dir-name)
                         (modern-icons-default-dir-icon))))
     (concat (propertize " " 'display icon) " ")))
 
 (defun modern-icons-helm-buffer-icon (buffer-name)
-  "Get icon for a buffer name."
+  "Get icon for a BUFFER-NAME."
   (let* ((icon (or (modern-icons-icon-for-buffer buffer-name)
                    (modern-icons-icon-for-file buffer-name))))
     (and icon (concat (propertize " " 'display icon) " "))))
 
 (defun modern-icons-helm-mode-icon (major-mode-name)
-  "Get icon for a major mode name."
+  "Get icon for a MAJOR-MODE-NAME."
   (when-let* ((icon (modern-icons-icon-for-mode major-mode-name)))
+    (concat (propertize " " 'display icon) " ")))
+
+(defun modern-icons-helm-workspace-icon (workspace-name)
+  "Get icon by matching WORKSPACE-NAME."
+  (when-let* ((icon (or (modern-icons-icon-for-workspace workspace-name)
+                        (modern-icons-default-file-icon))))
     (concat (propertize " " 'display icon) " ")))
 
 (defun modern-icons-helm-add-icons (candidates source)
@@ -90,6 +96,9 @@ CANDIDATES is the list of Helm candidates."
                       (modern-icons-helm-file-name-icon ".git"))
                      ((equal source-name "find-library")
                       (modern-icons-helm-mode-icon "emacs-lisp-mode"))
+                     ((member source-name '("+workspace/switch-to"
+                                            "persp-frame-switch"))
+                      (modern-icons-helm-workspace-icon candidate))
                      (buffer
                       (with-current-buffer buffer
                         (setq buff-name (buffer-name)
@@ -177,11 +186,15 @@ The advised function is `helm-make-source'."
                     "ediff-files"
                     "helm-find"
                     "kill-buffer"
+                    "persp-add-buffer"
+                    "persp-remove-buffer"
+                    "persp-frame-switch"
                     "project-find-file"
                     "rename-current-buffer"
                     "rename-current-file"
                     "save-current-file"
-                    "switch-to-buffer"))
+                    "switch-to-buffer"
+                    "+workspace/switch-to"))
            (modern-icons-helm-add-transformer #'modern-icons-helm-add-icons result)))
     result))
 
