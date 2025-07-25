@@ -72,9 +72,9 @@
   (when-let* ((icon (modern-icons-icon-for-mode mode-name)))
     (concat (propertize " " 'display icon) " ")))
 
-(defun modern-icons-helm-workspace-icon (workspace-name)
-  "Get icon by matching WORKSPACE-NAME."
-  (when-let* ((icon (or (modern-icons-icon-for-workspace workspace-name)
+(defun modern-icons-helm-persp-icon (persp-name)
+  "Get icon by matching PERSP-NAME."
+  (when-let* ((icon (or (modern-icons-icon-for-persp persp-name)
                         (modern-icons-default-file-icon))))
     (concat (propertize " " 'display icon) " ")))
 
@@ -98,7 +98,7 @@ CANDIDATES is the list of Helm candidates."
                       (modern-icons-helm-mode-icon "emacs-lisp-mode"))
                      ((member source-name '("+workspace/switch-to"
                                             "persp-frame-switch"))
-                      (modern-icons-helm-workspace-icon candidate))
+                      (modern-icons-helm-persp-icon candidate))
                      (buffer
                       (with-current-buffer buffer
                         (setq buff-name (buffer-name)

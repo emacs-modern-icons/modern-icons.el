@@ -1542,6 +1542,7 @@
     ("org-agenda-mode"                  ("symbol-icons"      "calendar.svg"))
     ("org-mode"                         ("file-icons"        "file_org.svg"))
     ("package-recipe-mode"              ("file-icons"        "file_emacs.svg"))
+    ("persp-mode"                       ("symbol-icons"      "workspace.svg"))
     ("profiler-report-mode"             ("symbol-icons"      "report.svg"))
     ("python-mode"                      ("file-icons"        "file_python.svg"))
     ("rust-mode"                        ("file-icons"        "file_rust.svg"))
@@ -1581,10 +1582,11 @@
     ("\\(error\\|errors\\)\\*"          ("symbol-icons"      "error.svg")))
   "Association list mapping buffer name regexes to icon names.")
 
-(defvar modern-icons-workspace-regex-icon-alist
-  '(("emacs"                           ("file-icons"        "file_emacs.svg"))
+(defvar modern-icons-persp-regex-icon-alist
+  '(("main"                            ("symbol-icons"      "workspace.svg"))
+    ("emacs"                           ("file-icons"        "file_emacs.svg"))
     ("rust"                            ("file-icons"        "file_rust.svg")))
-  "Association list mapping workspace name regexes to icon names.")
+  "Association list mapping persp name regexes to icon names.")
 
 (defvar modern-icons-code-item-icon-alist
   '(("array"                            ("symbol-icons"      "symbol-array.svg"))
@@ -1744,11 +1746,11 @@ Return NIL if no icon is found."
                                            modern-icons-buffer-regex-icon-alist))))
     (modern-icons-create-icon (car icon-data) (cadr icon-data))))
 
-(defun modern-icons-icon-for-workspace (workspace-name)
-  "Create an icon for WORKSPACE-NAME. Return NIL if no icon is found."
-  (when-let* ((workspace-name (downcase workspace-name))
-              (icon-data (cadr (cl-find-if (lambda (it) (string-match (car it) workspace-name))
-                                           modern-icons-workspace-regex-icon-alist))))
+(defun modern-icons-icon-for-persp (persp-name)
+  "Create an icon for PERSP-NAME. Return NIL if no icon is found."
+  (when-let* ((persp-name (downcase persp-name))
+              (icon-data (cadr (cl-find-if (lambda (it) (string-match (car it) persp-name))
+                                           modern-icons-persp-regex-icon-alist))))
     (modern-icons-create-icon (car icon-data) (cadr icon-data))))
 
 (defun modern-icons-icon-for-code (code-item-kind)
