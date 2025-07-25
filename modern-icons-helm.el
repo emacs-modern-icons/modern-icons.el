@@ -67,9 +67,9 @@
                    (modern-icons-icon-for-file buffer-name))))
     (and icon (concat (propertize " " 'display icon) " "))))
 
-(defun modern-icons-helm-mode-icon (major-mode-name)
-  "Get icon for a MAJOR-MODE-NAME."
-  (when-let* ((icon (modern-icons-icon-for-mode major-mode-name)))
+(defun modern-icons-helm-mode-icon (mode-name)
+  "Get icon for a MODE-NAME."
+  (when-let* ((icon (modern-icons-icon-for-mode mode-name)))
     (concat (propertize " " 'display icon) " ")))
 
 (defun modern-icons-helm-workspace-icon (workspace-name)

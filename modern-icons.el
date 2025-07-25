@@ -1496,6 +1496,7 @@
     ("calendar-mode"                    ("symbol-icons"      "calendar.svg"))
     ("compilation-mode"                 ("symbol-icons"      "lightbulb.svg"))
     ("conf-toml-mode"                   ("file-icons"        "file_toml.svg"))
+    ("copilot-mode"                     ("app-icons"         "copilot.svg"))
     ("cpp-mode"                         ("file-icons"        "file_cpp.svg"))
     ("crystal-mode"                     ("file-icons"        "file_crystal.svg"))
     ("debugger-mode"                    ("symbol-icons"      "debug.svg"))
@@ -1508,6 +1509,8 @@
     ("emacs-lisp-mode"                  ("file-icons"        "file_emacs.svg"))
     ("eshell-mode"                      ("app-icons"         "terminal.svg"))
     ("eww-mode"                         ("symbol-icons"      "globe-blue.svg"))
+    ("flycheck-mode"                    ("app-icons"         "flycheck.svg"))
+    ("flyspell-mode"                    ("app-icons"         "spell-check.svg"))
     ("fundamental-mode"                 ("file-icons"        "default_file.svg"))
     ("help-mode"                        ("symbol-icons"      "help.svg"))
     ("helpful-mode"                     ("symbol-icons"      "help.svg"))
@@ -1523,6 +1526,7 @@
     ("latex-mode"                       ("file-icons"        "file_tex.svg"))
     ("lisp-data-mode"                   ("file-icons"        "file_lisp.svg"))
     ("lisp-mode"                        ("file-icons"        "file_lisp.svg"))
+    ("lsp-mode"                         ("symbol-icons"      "rocket-ship.svg"))
     ("lua-mode"                         ("file-icons"        "file_lua.svg"))
     ("magit-diff-mode"                  ("symbol-icons"      "git-compare.svg"))
     ("magit-log-mode"                   ("file-icons"        "file_git.svg"))
@@ -1560,11 +1564,12 @@
     ("wdired-mode"                      ("file-icons"        "default_folder.svg"))
     ("xwidget-webkit-mode"              ("symbol-icons"      "globe.svg"))
     ("ztree-mode"                       ("file-icons"        "file_diff.svg")))
-  "Association list mapping major mode names to icon names.")
+  "Association list mapping major or minor mode names to icon names.")
 
 (defvar modern-icons-buffer-regex-icon-alist
   '(("\\*aidermacs"                     ("app-icons"         "aider.svg"))
     ("\\*copilot chat"                  ("app-icons"         "copilot.svg"))
+    ("\\*copilot-panel"                 ("app-icons"         "copilot.svg"))
     ("\\*customize"                     ("symbol-icons"      "settings.svg"))
     ("\\*format-all-errors"             ("symbol-icons"      "lightbulb.svg"))
     ("\\*messages"                      ("symbol-icons"      "information.svg"))
@@ -1599,6 +1604,8 @@
     ("defuns"                           ("symbol-icons"      "symbol-method.svg"))
     ("enum member"                      ("symbol-icons"      "symbol-enum-member.svg"))
     ("enum members"                     ("symbol-icons"      "symbol-enum-member.svg"))
+    ("enum-member"                      ("symbol-icons"      "symbol-enum-member.svg"))
+    ("enum-members"                     ("symbol-icons"      "symbol-enum-member.svg"))
     ("enum"                             ("symbol-icons"      "symbol-enum.svg"))
     ("enums"                            ("symbol-icons"      "symbol-enum.svg"))
     ("event"                            ("symbol-icons"      "symbol-event.svg"))
@@ -1724,10 +1731,10 @@ Return NIL if no icon is found."
               (icon-data (cadr (assoc dir-name modern-icons-dir-icon-alist))))
     (modern-icons-create-icon (car icon-data) (cadr icon-data))))
 
-(defun modern-icons-icon-for-mode (major-mode-name)
-  "Create an icon for MAJOR-MODE-NAME. Return NIL if no icon is found."
-  (when-let* ((major-mode-name (downcase (format "%s" major-mode-name)))
-              (icon-data (cadr (assoc major-mode-name modern-icons-mode-icon-alist #'string=))))
+(defun modern-icons-icon-for-mode (mode-name)
+  "Create an icon for MODE-NAME. Return NIL if no icon is found."
+  (when-let* ((mode-name (downcase (format "%s" mode-name)))
+              (icon-data (cadr (assoc mode-name modern-icons-mode-icon-alist #'string=))))
     (modern-icons-create-icon (car icon-data) (cadr icon-data))))
 
 (defun modern-icons-icon-for-buffer (buffer-name)
