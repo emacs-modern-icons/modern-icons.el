@@ -1819,9 +1819,6 @@ Return NIL if no icon is found."
   ;; Extract icons using a timer to ensure the tar file is opened properly.
   (run-at-time 0.1 nil (lambda () (modern-icons-extract-icons)))
 
-  (require 'modern-icons-corfu)
-  (modern-icons-corfu-enable)
-
   (require 'modern-icons-dired)
   (modern-icons-dired-enable)
 
