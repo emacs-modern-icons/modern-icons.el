@@ -1828,9 +1828,6 @@ Return NIL if no icon is found."
   (require 'modern-icons-helm)
   (modern-icons-helm-enable)
 
-  (require 'modern-icons-helm-rg)
-  (modern-icons-helm-rg-enable)
-
   (require 'modern-icons-helm-xref)
   (modern-icons-helm-xref-enable)
 

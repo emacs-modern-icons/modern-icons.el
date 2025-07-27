@@ -13,7 +13,6 @@ Current packages supported by [modern-icons.el](modern-icons.el):
 - [modern-icons-corfu.el](modern-icons-corfu.el) for [corfu](https://github.com/minad/corfu).
 - [modern-icons-dired.el](modern-icons-dired.el) for [dired-mode](https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html).
 - [modern-icons-helm.el](modern-icons-helm.el) for [helm](https://github.com/emacs-helm/helm).
-- [modern-icons-helm-rg.el](modern-icons-helm-rg.el) for [helm-rg](https://github.com/cosmicexplorer/helm-rg).
 - [modern-icons-helm-xref.el](modern-icons-helm-xref.el) for [helm-xref](https://github.com/brotzeit/helm-xref).
 - [modern-icons-lsp.el](modern-icons-lsp.el) for [lsp](https://github.com/emacs-lsp/lsp-mode).
 - [modern-icons-treemacs.el](modern-icons-treemacs.el) for [treemacs](https://github.com/Alexander-Miller/treemacs).
