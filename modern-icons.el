@@ -1802,7 +1802,7 @@ Return NIL if no icon is found."
 (defun modern-icons-package-icons ()
   "Package all icons from the `icons' directory into the tar file."
   (interactive)
-  (message "modern-icons: packaging icons files...")
+  (message "Modern icons: packaging icons files...")
   (if (executable-find "tar")
       (let ((default-directory modern-icons-root-dir))
         (shell-command (format "tar -cJf %s %s" modern-icons-tar-file
@@ -1815,30 +1815,14 @@ Return NIL if no icon is found."
 (defun modern-icons-enable ()
   "Enable all `modern-icons' features."
   (interactive)
-
-  ;; Extract icons using a timer to ensure the tar file is opened properly.
-  (run-at-time 0.1 nil (lambda () (modern-icons-extract-icons)))
-
-  (require 'modern-icons-dired)
-  (modern-icons-dired-enable)
-
-  (require 'modern-icons-helm)
-  (modern-icons-helm-enable)
-
-  (require 'modern-icons-helm-xref)
-  (modern-icons-helm-xref-enable)
-
-  (require 'modern-icons-lsp)
-  (modern-icons-lsp-enable)
-
-  (require 'modern-icons-treemacs)
-  (modern-icons-treemacs-enable))
+  ;; Extract icons using a timer to ensure the tar file is extracted properly.
+  (run-at-time 0.1 nil (lambda () (modern-icons-extract-icons))))
 
 (defun modern-icons-reset-cache ()
   "Reset modern-icons setting cache."
   (interactive)
   (clrhash modern-icons-icon-cache)
-  (message "Reset Modern icon cache!"))
+  (message "Modern icons: reset icon settings cache!"))
 
 (provide 'modern-icons)
 ;;; modern-icons.el ends here
