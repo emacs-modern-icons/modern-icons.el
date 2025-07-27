@@ -1,12 +1,12 @@
 ;;; modern-icons.el --- Emacs modern and pretty icons library -*- lexical-binding: t -*-
 
-;; Copyright (C) 2025, Ta Quang Trung
+;; Copyright (C) 2025, Quang Trung Ta
 
-;; Author: Ta Quang Trung <taquangtrungvn@gmail.com>
+;; Author: Quang Trung Ta <taquangtrungvn@gmail.com>
 ;; Version: 0.1.0
 ;; Created: September 25, 2024
 ;; Package-Requires: ((emacs "28.1"))
-;; Homepage: https://github.com/taquangtrung/modern-icons.el
+;; Homepage: https://github.com/emacs-modern-icons/modern-icons.el
 ;; Keywords: lisp, icons
 
 ;; This program is free software; you can redistribute it and/or modify

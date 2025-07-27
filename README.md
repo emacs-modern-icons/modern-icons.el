@@ -15,7 +15,7 @@ From Melpa (supported soon) or manual installation using [straight.el](https://g
   ```elisp
   (use-package modern-icons
     :straight (modern-icons :type git :host github
-                            :repo "taquangtrung/modern-icons.el"))
+                            :repo "emacs-modern-icons/modern-icons.el"))
   ```
 
 ## Usage
@@ -33,11 +33,11 @@ From Melpa (supported soon) or manual installation using [straight.el](https://g
 
 Below are some integrations of [modern-icons.el](modern-icons.el) to existing Emacs packages:
 
-- [modern-icons-dired.el](https://github.com/taquangtrung/modern-icons-dired.el) for [dired-mode](https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html).
-- [modern-icons-helm.el](https://github.com/taquangtrung/modern-icons-helm.el) for [helm](https://github.com/emacs-helm/helm).
-- [modern-icons-helm-xref.el](https://github.com/taquangtrung/modern-icons-helm-xref.el) for [helm-xref](https://github.com/brotzeit/helm-xref).
-- [modern-icons-lsp.el](https://github.com/taquangtrung/modern-icons-lsp.el) for [lsp](https://github.com/emacs-lsp/lsp-mode).
-- [modern-icons-treemacs.el](https://github.com/taquangtrung/modern-icons-treemacs.el) for [treemacs](https://github.com/Alexander-Miller/treemacs).
+- [modern-icons-dired.el](https://github.com/emacs-modern-icons/modern-icons-dired.el) for [dired-mode](https://www.gnu.org/software/emacs/manual/html_node/emacs/Dired.html).
+- [modern-icons-helm.el](https://github.com/emacs-modern-icons/modern-icons-helm.el) for [helm](https://github.com/emacs-helm/helm).
+- [modern-icons-helm-xref.el](https://github.com/emacs-modern-icons/modern-icons-helm-xref.el) for [helm-xref](https://github.com/brotzeit/helm-xref).
+- [modern-icons-lsp.el](https://github.com/emacs-modern-icons/modern-icons-lsp.el) for [lsp](https://github.com/emacs-lsp/lsp-mode).
+- [modern-icons-treemacs.el](https://github.com/emacs-modern-icons/modern-icons-treemacs.el) for [treemacs](https://github.com/Alexander-Miller/treemacs).
 
 For a full list of integrations, please see repositories in the GitHub organization: [emacs-modern-icons](https://github.com/emacs-modern-icons).
 
