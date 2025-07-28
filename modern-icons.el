@@ -1566,7 +1566,7 @@
   '(("copilot-mode"                     ("app-icons"         "copilot.svg"))
     ("flycheck-mode"                    ("app-icons"         "flycheck.svg"))
     ("flyspell-mode"                    ("app-icons"         "spell-check.svg"))
-    ("lsp-mode"                         ("symbol-icons"      "rocket-ship.svg"))
+    ("lsp-mode"                         ("app-icons"         "lsp.svg"))
     ("persp-mode"                       ("symbol-icons"      "workspace.svg")))
   "Association list mapping minor mode names to icon names.")
 
