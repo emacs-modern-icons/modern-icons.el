@@ -1490,13 +1490,12 @@
     ("wwwroot"                          ("file-icons"        "folder_www.svg")))
   "Association list mapping directory names to icon names.")
 
-(defvar modern-icons-mode-icon-alist
+(defvar modern-icons-major-mode-icon-alist
   '(("c++-mode"                         ("file-icons"        "file_cpp.svg"))
     ("c-mode"                           ("file-icons"        "file_c.svg"))
     ("calendar-mode"                    ("symbol-icons"      "calendar.svg"))
     ("compilation-mode"                 ("symbol-icons"      "lightbulb.svg"))
     ("conf-toml-mode"                   ("file-icons"        "file_toml.svg"))
-    ("copilot-mode"                     ("app-icons"         "copilot.svg"))
     ("cpp-mode"                         ("file-icons"        "file_cpp.svg"))
     ("crystal-mode"                     ("file-icons"        "file_crystal.svg"))
     ("debugger-mode"                    ("symbol-icons"      "debug.svg"))
@@ -1509,8 +1508,6 @@
     ("emacs-lisp-mode"                  ("file-icons"        "file_emacs.svg"))
     ("eshell-mode"                      ("app-icons"         "terminal.svg"))
     ("eww-mode"                         ("symbol-icons"      "globe-blue.svg"))
-    ("flycheck-mode"                    ("app-icons"         "flycheck.svg"))
-    ("flyspell-mode"                    ("app-icons"         "spell-check.svg"))
     ("fundamental-mode"                 ("file-icons"        "default_file.svg"))
     ("help-mode"                        ("symbol-icons"      "help.svg"))
     ("helpful-mode"                     ("symbol-icons"      "help.svg"))
@@ -1526,7 +1523,6 @@
     ("latex-mode"                       ("file-icons"        "file_tex.svg"))
     ("lisp-data-mode"                   ("file-icons"        "file_lisp.svg"))
     ("lisp-mode"                        ("file-icons"        "file_lisp.svg"))
-    ("lsp-mode"                         ("symbol-icons"      "rocket-ship.svg"))
     ("lua-mode"                         ("file-icons"        "file_lua.svg"))
     ("magit-diff-mode"                  ("symbol-icons"      "git-compare.svg"))
     ("magit-log-mode"                   ("file-icons"        "file_git.svg"))
@@ -1542,7 +1538,6 @@
     ("org-agenda-mode"                  ("symbol-icons"      "calendar.svg"))
     ("org-mode"                         ("file-icons"        "file_org.svg"))
     ("package-recipe-mode"              ("file-icons"        "file_emacs.svg"))
-    ("persp-mode"                       ("symbol-icons"      "workspace.svg"))
     ("profiler-report-mode"             ("symbol-icons"      "report.svg"))
     ("python-mode"                      ("file-icons"        "file_python.svg"))
     ("rust-mode"                        ("file-icons"        "file_rust.svg"))
@@ -1565,7 +1560,15 @@
     ("wdired-mode"                      ("file-icons"        "default_folder.svg"))
     ("xwidget-webkit-mode"              ("symbol-icons"      "globe.svg"))
     ("ztree-mode"                       ("file-icons"        "file_diff.svg")))
-  "Association list mapping major or minor mode names to icon names.")
+  "Association list mapping major mode names to icon names.")
+
+(defvar modern-icons-minor-mode-icon-alist
+  '(("copilot-mode"                     ("app-icons"         "copilot.svg"))
+    ("flycheck-mode"                    ("app-icons"         "flycheck.svg"))
+    ("flyspell-mode"                    ("app-icons"         "spell-check.svg"))
+    ("lsp-mode"                         ("symbol-icons"      "rocket-ship.svg"))
+    ("persp-mode"                       ("symbol-icons"      "workspace.svg")))
+  "Association list mapping minor mode names to icon names.")
 
 (defvar modern-icons-buffer-regex-icon-alist
   '(("\\*aidermacs"                     ("app-icons"         "aider.svg"))
@@ -1733,10 +1736,16 @@ Return NIL if no icon is found."
               (icon-data (cadr (assoc dir-name modern-icons-dir-icon-alist))))
     (modern-icons-create-icon (car icon-data) (cadr icon-data))))
 
-(defun modern-icons-icon-for-mode (mode-name)
-  "Create an icon for MODE-NAME. Return NIL if no icon is found."
-  (when-let* ((mode-name (downcase (format "%s" mode-name)))
-              (icon-data (cadr (assoc mode-name modern-icons-mode-icon-alist #'string=))))
+(defun modern-icons-icon-for-major-mode (mode)
+  "Create an icon for the major mode MODE. Return NIL if no icon is found."
+  (when-let* ((mode (downcase (format "%s" mode)))
+              (icon-data (cadr (assoc mode modern-icons-major-mode-icon-alist #'string=))))
+    (modern-icons-create-icon (car icon-data) (cadr icon-data))))
+
+(defun modern-icons-icon-for-minor-mode (mode)
+  "Create an icon for the minor mode MODE. Return NIL if no icon is found."
+  (when-let* ((mode (downcase (format "%s" mode)))
+              (icon-data (cadr (assoc mode modern-icons-minor-mode-icon-alist #'string=))))
     (modern-icons-create-icon (car icon-data) (cadr icon-data))))
 
 (defun modern-icons-icon-for-buffer (buffer-name)
