@@ -1677,6 +1677,7 @@
 
 (defvar modern-icons-code-action-icon-alist
   '(("other"                            ("symbol-icons"      "lightbulb-small.svg"))
+    ("quickfix"                         ("symbol-icons"      "lightbulb-autofix.svg"))
     ("refactor.extract"                 ("symbol-icons"      "wrench.svg"))
     ("refactor.inline"                  ("symbol-icons"      "wrench.svg"))
     ("refactor.rewrite"                 ("symbol-icons"      "wrench.svg")))
