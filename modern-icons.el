@@ -1675,6 +1675,13 @@
     ("variables"                        ("symbol-icons"      "symbol-variable.svg")))
   "Association list mapping code item names to icon names.")
 
+(defvar modern-icons-code-action-icon-alist
+  '(("other"                            ("symbol-icons"      "lightbulb-small.svg"))
+    ("refactor.extract"                 ("symbol-icons"      "wrench.svg"))
+    ("refactor.inline"                  ("symbol-icons"      "wrench.svg"))
+    ("refactor.rewrite"                 ("symbol-icons"      "wrench.svg")))
+  "Association list mapping code action names to icon names.")
+
 (defvar modern-icons-icon-cache (make-hash-table :test 'equal)
   "A hashmap to cache icons to optimize memory and performance.")
 
@@ -1763,10 +1770,16 @@ Return NIL if no icon is found."
                                            modern-icons-persp-regex-icon-alist))))
     (modern-icons-create-icon (car icon-data) (cadr icon-data))))
 
-(defun modern-icons-icon-for-code (code-item-kind)
+(defun modern-icons-icon-for-code-item (code-item-kind)
   "Create an icon for a CODE-ITEM-KIND. Return NIL if no icon is found."
   (when-let* ((code-item-kind (downcase code-item-kind))
               (icon-data (cadr (assoc code-item-kind modern-icons-code-item-icon-alist))))
+    (modern-icons-create-icon (car icon-data) (cadr icon-data))))
+
+(defun modern-icons-icon-for-code-action (code-action)
+  "Create an icon for a CODE-ACTION. Return NIL if no icon is found."
+  (when-let* ((code-action (downcase code-action))
+              (icon-data (cadr (assoc code-action modern-icons-code-action-icon-alist))))
     (modern-icons-create-icon (car icon-data) (cadr icon-data))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -1792,9 +1805,13 @@ Return NIL if no icon is found."
   "Create the default major mode icon."
   (modern-icons-icon-for-mode "fundamental-mode"))
 
-(defun modern-icons-default-code-icon ()
+(defun modern-icons-default-code-item-icon ()
   "Create the default code item icon."
-  (modern-icons-icon-for-code "misc"))
+  (modern-icons-icon-for-code-item "misc"))
+
+(defun modern-icons-default-code-action-icon ()
+  "Create the default code item icon."
+  (modern-icons-icon-for-code-action "other"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Icon packaging
