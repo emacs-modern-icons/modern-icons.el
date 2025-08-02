@@ -1787,6 +1787,10 @@ Return NIL if no icon is found."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Default icons
 
+(defun modern-icons-default-unkown-icon ()
+  "Create the default unknown icon."
+  (modern-icons-create-icon "symbol-icons" "question-circle.svg"))
+
 (defun modern-icons-default-file-icon ()
   "Create a default file icon."
   (modern-icons-create-icon "file-icons" "default_file.svg"))

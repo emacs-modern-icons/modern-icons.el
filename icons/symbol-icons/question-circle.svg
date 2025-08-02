@@ -4,7 +4,7 @@
    height="48"
    version="1"
    id="svg6"
-   sodipodi:docname="question.svg"
+   sodipodi:docname="question-circle.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -23,8 +23,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="17.729167"
-     inkscape:cx="17.710928"
-     inkscape:cy="24.056404"
+     inkscape:cx="14.608695"
+     inkscape:cy="24.112808"
      inkscape:window-width="1920"
      inkscape:window-height="1034"
      inkscape:window-x="0"
@@ -32,7 +32,7 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="svg6" />
   <circle
-     style="fill:#e580ff;stroke-width:0.968651"
+     style="fill:#8080ff;stroke-width:0.968651"
      cx="23.813154"
      cy="23.975721"
      r="19.373053"
