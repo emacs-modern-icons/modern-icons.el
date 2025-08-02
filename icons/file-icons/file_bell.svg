@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800"
+   height="800"
+   viewBox="0 0 36 36"
+   aria-hidden="true"
+   role="img"
+   class="iconify iconify--twemoji"
+   preserveAspectRatio="xMidYMid"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="file_bell.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs12" />
+  <sodipodi:namedview
+     id="namedview10"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.295"
+     inkscape:cx="401.69492"
+     inkscape:cy="400"
+     inkscape:window-width="1920"
+     inkscape:window-height="1154"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg8" />
+  <path
+     fill="#ffac33"
+     d="m 26.331201,14.429878 c 0,9.204493 4.18386,8.367721 4.18386,12.551581 0,0 0,1.673544 -1.673544,1.673544 H 7.0854434 c -1.6735441,0 -1.6735441,-1.673544 -1.6735441,-1.673544 0,-4.18386 4.1838601,-3.347088 4.1838601,-12.551581 0,-4.6206537 3.7462286,-8.3677193 8.3677206,-8.3677193 4.621492,0 8.367721,3.7470656 8.367721,8.3677193 z"
+     id="path2"
+     style="stroke-width:0.836772" />
+  <circle
+     fill="#ffac33"
+     cx="17.96348"
+     cy="6.0621591"
+     r="2.5103161"
+     id="circle4"
+     style="stroke-width:0.836772" />
+  <path
+     fill="#ffac33"
+     d="m 17.96348,33.675635 a 3.3470881,3.3470881 0 0 0 3.347089,-3.347088 h -6.694177 a 3.3470881,3.3470881 0 0 0 3.347088,3.347088 z"
+     id="path6"
+     style="stroke-width:0.836772" />
+</svg>

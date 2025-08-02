@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="48"
+   height="48"
+   version="1.1"
+   id="svg16"
+   sodipodi:docname="nvim.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs20" />
+  <sodipodi:namedview
+     id="namedview18"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="12.536414"
+     inkscape:cx="30.43135"
+     inkscape:cy="28.75623"
+     inkscape:window-width="1920"
+     inkscape:window-height="1034"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg16" />
+  <path
+     style="opacity:0.2;stroke-width:0.955107"
+     d="m 16.238693,6.2456046 -7.7182587,5.3747024 -1.8556729,1.292481 -0.00374,24.763823 9.5776669,6.667183 V 22.580203 l 15.324267,21.763591 7.718642,-5.372798 1.859024,-1.294385 V 12.912788 L 31.56296,6.2456046 V 28.009195 Z"
+     id="path2" />
+  <path
+     style="fill:#6ba63f;stroke-width:0.955107"
+     d="M 41.140626,11.960332 31.56296,5.2931498 V 43.391339 l 9.577666,-6.667183 z"
+     id="path4" />
+  <path
+     style="fill:#37b4ee;stroke-width:0.955107"
+     d="M 6.6638994,11.960332 16.238693,5.2931498 V 43.391339 L 6.6610261,36.724156 Z"
+     id="path6" />
+  <path
+     style="fill:#95d25f;stroke-width:0.955107"
+     d="M 16.238693,5.2931498 39.280643,38.018542 31.56296,43.391339 8.521009,10.666899 Z"
+     id="path8" />
+  <path
+     style="fill:#50a635;stroke-width:0.955107"
+     d="m 31.56296,27.05674 v 16.334599 l 7.718642,-5.372797 z"
+     id="path10" />
+  <path
+     style="fill:#69c657;stroke-width:0.955107"
+     d="M 16.238693,5.2931498 8.5204343,10.667471 16.238693,21.627368 V 5.2927689 Z"
+     id="path12" />
+  <path
+     style="opacity:0.2;fill:#ffffff;stroke-width:0.955107"
+     d="M 16.238693,5.2931498 8.5204343,10.667471 6.6647614,11.960332 v 0.952456 L 8.5204343,11.620307 16.238693,6.2456046 31.56296,28.009195 V 27.05674 Z m 15.324267,0 v 0.9524548 l 9.577666,6.6671834 v -0.952456 z"
+     id="path14" />
+</svg>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 470.647"
+   version="1.1"
+   id="svg6"
+   sodipodi:docname="file_yaml.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     id="namedview8"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.25071869"
+     inkscape:cx="694.0049"
+     inkscape:cy="797.70678"
+     inkscape:window-width="1920"
+     inkscape:window-height="1154"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg6" />
+  <polygon
+     id="Y"
+     points="119.018,88.646 175.243,0 235.793,0 143.978,137.674 143.978,224.949 87.702,224.949 87.702,137.674 0,0 63.25,0 "
+     transform="matrix(0.77991251,0,0,0.77991251,55.493984,58.331413)" />
+  <path
+     id="A"
+     fill="#cb171e"
+     d="m 313.09441,195.16784 h -79.44267 l -16.15746,39.01435 H 182.31556 L 256.70362,58.741646 h 35.98282 L 364.05623,234.18219 H 326.46444 L 313.09362,195.16784 Z M 299.89829,160.1412 275.54474,95.75942 248.37493,160.1412 Z"
+     style="stroke-width:0.779913" />
+  <polygon
+     id="M"
+     points="272.939,470.602 318.318,470.602 318.318,250.177 256.358,250.177 201.381,349.883 149.021,250.177 87.701,250.177 87.701,470.647 135.004,470.647 135.004,318.569 184.509,420.789 221.743,420.789 272.939,314.976 "
+     transform="matrix(0.77991251,0,0,0.77991251,55.493984,58.331413)" />
+  <polygon
+     id="L"
+     points="512,422.735 395.638,422.735 395.638,250.125 347.442,250.125 347.442,469.647 512,469.647 512,422.737 "
+     transform="matrix(0.77991251,0,0,0.77991251,55.493984,58.331413)" />
+</svg>

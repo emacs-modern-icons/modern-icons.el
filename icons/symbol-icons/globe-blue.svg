@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="600"
+   height="600"
+   viewBox="0 0 48 48"
+   version="1.1"
+   id="svg22"
+   sodipodi:docname="web.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview24"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.90125"
+     inkscape:cx="399.44521"
+     inkscape:cy="401.66436"
+     inkscape:window-width="1920"
+     inkscape:window-height="1034"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g20" />
+  <defs
+     id="defs3">
+    <circle
+       id="webpound-a"
+       cx="24"
+       cy="24"
+       r="24" />
+  </defs>
+  <g
+     fill="none"
+     fill-rule="evenodd"
+     id="g20">
+    <g
+       transform="matrix(0.81664508,0,0,0.81664508,4.3226854,4.8432353)"
+       id="g12">
+      <mask
+         id="webpound-b"
+         fill="#ffffff">
+        <use
+           xlink:href="#webpound-a"
+           id="use5" />
+      </mask>
+      <use
+         fill="#5ea7ff"
+         xlink:href="#webpound-a"
+         id="use8" />
+      <path
+         fill="#e8e8e8"
+         d="m 36.666113,17.005196 c 0,0 -5.82802,-2.378462 -7.563957,-1.189231 -1.735936,1.189231 -0.808572,6.804608 -0.808572,6.804608 0,0 -2.587168,3.707873 -1.293584,5.658036 1.293584,1.950163 4.886874,1.279802 6.905679,2.999987 2.018805,1.720184 1.180043,4.80746 1.180043,4.80746 l -0.488294,3.604446 c 0,0 5.407326,-2.423091 6.965403,-5.913996 1.558077,-3.490905 1.053375,-8.963863 1.053375,-8.963863 L 45.772394,21.951138 48.547838,12.950512 38.808304,9.8006946 37.735239,5 l -6.964746,1.9741762 -0.6294,5.2360298 5.349371,1.771141 z m -38.4768989,3.03511 c 0,0 1.9699412,-1.255984 2.23287067,-1.275971 C 2.4392489,18.611 9.4683796,19.03982 11.306232,16.375377 13.383642,13.363634 15.115339,9.3755591 15.115339,9.3755591 L 15.045758,6.3070857 4.1835504,3.6413691 Z"
+         mask="url(#webpound-b)"
+         id="path10" />
+    </g>
+    <path
+       fill="#e8e8e8"
+       d="m 14.816638,39.161013 0.678364,-7.491818 -5.449869,-4.172123 c 0,0 -0.3147426,-3.338772 3.640996,-3.810586 3.955738,-0.471815 6.392904,1.974888 6.392904,1.974888 0,0 1.570432,2.430265 0.984761,4.081217 -0.585671,1.650953 -2.100964,4.123242 -2.100964,4.123242 0,0 -0.120198,2.808659 -1.1472,4.120262 -1.027002,1.311604 -2.998992,1.174918 -2.998992,1.174918 z"
+       id="path14"
+       style="stroke-width:0.816645" />
+  </g>
+</svg>

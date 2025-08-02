@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48mm"
+   height="48mm"
+   viewBox="0 0 48 48"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="file_dvi.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.5162318"
+     inkscape:cx="219.62341"
+     inkscape:cy="157.29785"
+     inkscape:window-width="1920"
+     inkscape:window-height="1034"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="51.452175"
+       y="330.46039"
+       width="472.89725"
+       height="393.4588"
+       id="rect113" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-5.2519609,-76.932226)"
+       id="text111"
+       style="font-size:53.3333px;white-space:pre;shape-inside:url(#rect113);display:inline;fill:#000000" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.3939px;font-family:Go;-inkscape-font-specification:Go;fill:#800080;stroke-width:0.35349"
+       x="6.6821222"
+       y="29.734524"
+       id="text277"
+       transform="scale(0.809099,1.2359427)"><tspan
+         sodipodi:role="line"
+         id="tspan275"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:26.3939px;font-family:'Noto Sans';-inkscape-font-specification:'Noto Sans Bold';fill:#cd87de;stroke-width:0.35349"
+         x="6.6821222"
+         y="29.734524">DVI</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="128"
+   height="128"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="file_lisp.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs14" />
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.84375"
+     inkscape:cx="65.355932"
+     inkscape:cy="64"
+     inkscape:window-width="1920"
+     inkscape:window-height="1154"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <title
+     id="title2">Lisp Icon</title>
+  <desc
+     id="desc4">This is shape (source) for Clarity vector icon theme for gtk</desc>
+  <metadata
+     id="metadata6">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Lisp Icon</dc:title>
+        <dc:description>This is shape (source) for Clarity vector icon theme for gtk</dc:description>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Jakub Jankiewicz</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Jakub Jankiewicz</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:date>2010</dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     d="m 36.269585,17.249902 c -8.380551,3.747461 -15.159369,9.982433 -20.371631,18.703571 -5.212286,8.687178 -7.8434372,18.293103 -7.8434322,28.853895 -5e-6,7.222263 1.3531976,14.192767 4.0104422,20.903992 2.657229,6.711233 6.415826,12.557143 11.321517,17.49689 3.440761,3.47484 7.738932,6.49648 12.883104,9.08562 v -1.88101 c -3.440814,-2.38472 -6.229587,-4.90086 -8.375792,-7.52403 -2.112188,-2.62318 -3.814696,-5.372197 -5.075163,-8.233827 -1.260502,-2.82758 -2.308429,-6.584752 -3.194157,-11.286026 -1.124233,-5.961745 -1.703567,-12.584366 -1.703551,-19.874763 -1.6e-5,-6.711202 0.65884,-13.14071 1.987475,-19.306911 1.328603,-6.166108 3.342082,-11.276484 6.033411,-15.29647 2.691282,-4.019862 6.137485,-7.194855 10.327777,-9.511492 z m 55.507372,0 v 2.129439 c 3.474846,2.384771 6.263613,4.900909 8.375793,7.524016 2.11215,2.623235 3.81467,5.335331 5.07516,8.16285 1.29453,2.827627 2.34246,6.620293 3.19416,11.321517 1.12419,5.99586 1.70352,12.618482 1.70355,19.874761 -3e-5,6.711254 -0.65888,13.142186 -1.98748,19.342403 -1.29457,6.166158 -3.30804,11.27511 -6.0334,15.260992 -2.691318,4.0199 -6.137525,7.19633 -10.327783,9.54698 v 1.88101 c 8.414583,-3.74742 15.193413,-9.98239 20.371633,-18.703587 5.21225,-8.687128 7.84339,-18.293052 7.84343,-28.853896 -4e-5,-7.256277 -1.35323,-14.226783 -4.01044,-20.903991 -2.65726,-6.711183 -6.41444,-12.558511 -11.28603,-17.532378 -3.44079,-3.474787 -7.74039,-6.495006 -12.918593,-9.050116 z M 52.41783,27.719643 c -2.861655,7.2e-5 -5.225867,1.510894 -7.133621,4.542802 -1.907766,2.997978 -2.914503,7.023515 -3.016704,12.03133 h 1.810023 c 0.17033,-3.100055 0.982534,-5.384744 2.413363,-6.849695 1.46488,-1.498891 3.168814,-2.271335 5.110653,-2.2714 2.418756,6.5e-5 4.433659,1.471123 6.068901,4.400838 1.635204,2.929836 3.065082,7.459455 4.223386,13.557428 L 39.996103,100.22704 h 9.653456 l 15.225487,-34.532406 4.400841,19.839272 c 1.567058,7.051915 3.347666,11.389844 5.323596,13.025077 1.97586,1.601157 4.029101,2.413367 6.175374,2.413367 2.623128,0 4.828296,-1.238197 6.565769,-3.69104 1.771444,-2.452831 2.626256,-6.364779 2.626308,-11.747404 h -1.810023 c -0.511056,5.382625 -2.679311,8.056385 -6.494788,8.056377 -2.248475,8e-6 -4.18528,-1.123169 -5.820467,-3.371611 -1.601192,-2.282489 -3.14893,-6.775194 -4.613784,-13.486446 L 67.607827,60.548491 C 65.052761,49.033834 63.155717,41.444233 61.929322,37.798986 60.736949,34.119796 59.304226,31.525559 57.634954,30.026536 55.999713,28.493583 54.257442,27.719715 52.41783,27.719643 Z"
+     id="path8"
+     style="fill:#dd55ff;fill-opacity:1;stroke-width:1.1357" />
+</svg>

@@ -1589,6 +1589,7 @@
 (defvar modern-icons-persp-regex-icon-alist
   '(("main"                            ("symbol-icons"      "workspace.svg"))
     ("emacs"                           ("file-icons"        "file_emacs.svg"))
+    ("latex"                           ("file-icons"        "file_tex.svg"))
     ("rust"                            ("file-icons"        "file_rust.svg")))
   "Association list mapping persp name regexes to icon names.")
 

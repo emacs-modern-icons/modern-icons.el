@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="96mm"
+   height="96mm"
+   viewBox="0 0 96 96"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="file_yul.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.84096521"
+     inkscape:cx="261.60416"
+     inkscape:cy="533.91031"
+     inkscape:window-width="1920"
+     inkscape:window-height="1154"
+     inkscape:window-x="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="276.41135"
+       y="604.97064"
+       width="195.38249"
+       height="146.32982"
+       id="rect240" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;fill:none;stroke-width:2.64583"
+       x="56.731747"
+       y="112.27246"
+       id="text236"><tspan
+         sodipodi:role="line"
+         id="tspan234"
+         style="stroke-width:2.64583"
+         x="56.731747"
+         y="112.27246">Yul</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text238"
+       style="white-space:pre;shape-inside:url(#rect240);display:inline;fill:none;stroke-width:10" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.4138px;font-family:Hack;-inkscape-font-specification:Hack;fill:#b3b3b3;stroke-width:33.5302"
+       x="14.568399"
+       y="89.876801"
+       id="text246"
+       transform="scale(1.1434112,0.874576)"><tspan
+         sodipodi:role="line"
+         id="tspan244"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.4138px;font-family:Hack;-inkscape-font-specification:'Hack Bold';fill:#b3b3b3;stroke-width:33.5302"
+         x="14.568399"
+         y="89.876801">Y</tspan></text>
+  </g>
+</svg>
