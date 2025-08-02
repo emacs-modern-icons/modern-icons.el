@@ -29,7 +29,6 @@
 ;;; Code:
 
 (require 'cl-lib)
-(require 'tar-mode)
 
 (defgroup modern-icons nil
   "Modern icons for Emacs."
@@ -53,12 +52,6 @@
       (when-let ((lib-path (locate-library "modern-icons")))
         (file-name-directory lib-path)))
   "Root directory of this `modern-icons' library where it is loaded.")
-
-(defvar modern-icons-tar-file "icons.tar.xz"
-  "Name of the icon tar file.")
-
-(defvar modern-icons-icons-dir "icons"
-  "Directory where the icons will be stored.")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Icons settings
@@ -1820,36 +1813,7 @@ Return NIL if no icon is found."
   (modern-icons-icon-for-code-action "other"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Icon packaging
-
-(defun modern-icons-extract-icons ()
-  "Extract all icons from the tar file into the `icons' directory."
-  (interactive)
-  (let ((icons-tar-file (concat modern-icons-root-dir modern-icons-tar-file))
-        (message-log-max nil)
-        (inhibit-message t))
-    (with-current-buffer (find-file-noselect icons-tar-file)
-      (tar-untar-buffer)
-      (kill-buffer))))
-
-(defun modern-icons-package-icons ()
-  "Package all icons from the `icons' directory into the tar file."
-  (interactive)
-  (message "Modern icons: packaging icons files...")
-  (if (executable-find "tar")
-      (let ((default-directory modern-icons-root-dir))
-        (shell-command (format "tar -cJf %s %s" modern-icons-tar-file
-                               modern-icons-icons-dir)))
-    (message "Error: require `tar` command!")))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; Main functions
-
-(defun modern-icons-enable ()
-  "Enable all `modern-icons' features."
-  (interactive)
-  ;; Extract icons using a timer to ensure the tar file is extracted properly.
-  (run-at-time 0.1 nil (lambda () (modern-icons-extract-icons))))
+;; Public functions
 
 (defun modern-icons-reset-cache ()
   "Reset modern-icons setting cache."

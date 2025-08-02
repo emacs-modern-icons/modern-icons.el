@@ -24,7 +24,6 @@ From Melpa (supported soon) or manual installation using [straight.el](https://g
 
   ```elisp
   (require 'modern-icons)
-  (modern-icons-enable))
   ```
 
 - To use APIs to generate icon data for files, directories, buffers, major modes, code ouline items, etc, see [modern-icons.el](modern-icons.el).
