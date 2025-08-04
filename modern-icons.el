@@ -1670,8 +1670,9 @@
   "Association list mapping code item names to icon names.")
 
 (defvar modern-icons-code-action-icon-alist
-  '(("other"                            ("symbol-icons"      "lightbulb-small.svg"))
+  '(("other"                            ("symbol-icons"      "lightbulb.svg"))
     ("quickfix"                         ("symbol-icons"      "lightbulb-autofix.svg"))
+    ("refactor"                         ("symbol-icons"      "wrench.svg"))
     ("refactor.extract"                 ("symbol-icons"      "wrench.svg"))
     ("refactor.inline"                  ("symbol-icons"      "wrench.svg"))
     ("refactor.rewrite"                 ("symbol-icons"      "wrench.svg")))
