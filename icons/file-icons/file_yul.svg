@@ -25,10 +25,10 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.84096521"
-     inkscape:cx="261.60416"
-     inkscape:cy="533.91031"
+     inkscape:cx="164.09716"
+     inkscape:cy="300.25023"
      inkscape:window-width="1920"
-     inkscape:window-height="1154"
+     inkscape:window-height="1034"
      inkscape:window-x="0"
      inkscape:window-y="20"
      inkscape:window-maximized="1"
@@ -64,15 +64,15 @@
        style="white-space:pre;shape-inside:url(#rect240);display:inline;fill:none;stroke-width:10" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:89.4138px;font-family:Hack;-inkscape-font-specification:Hack;fill:#b3b3b3;stroke-width:33.5302"
-       x="14.568399"
-       y="89.876801"
-       id="text246"
-       transform="scale(1.1434112,0.874576)"><tspan
+       style="font-weight:bold;font-size:64.1283px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#8080ff;stroke-width:0.480963"
+       x="7.2723141"
+       y="66.696274"
+       id="text347"
+       transform="scale(0.91621818,1.0914431)"><tspan
          sodipodi:role="line"
-         id="tspan244"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:89.4138px;font-family:Hack;-inkscape-font-specification:'Hack Bold';fill:#b3b3b3;stroke-width:33.5302"
-         x="14.568399"
-         y="89.876801">Y</tspan></text>
+         id="tspan345"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Inconsolata;-inkscape-font-specification:'Inconsolata Bold';stroke-width:0.480963"
+         x="7.2723141"
+         y="66.696274">Yul</tspan></text>
   </g>
 </svg>
