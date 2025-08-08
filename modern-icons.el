@@ -927,6 +927,7 @@
     ("ru"                        ("file-icons"         "file_ruby.svg"))
     ("rules"                     ("file-icons"         "file_prometheus.svg"))
     ("rwd"                       ("file-icons"         "file_matlab.svg"))
+    ("safetensors"               ("file-icons"         "file_safetensors.svg"))
     ("sage"                      ("file-icons"         "file_sage.svg"))
     ("san"                       ("file-icons"         "file_san.svg"))
     ("sass"                      ("file-icons"         "file_sass.svg"))
