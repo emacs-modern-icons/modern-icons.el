@@ -1810,6 +1810,10 @@ Return NIL if no icon is found."
   "Create the default code item icon."
   (modern-icons-icon-for-code-action "other"))
 
+(defun modern-icons-default-persp-icon ()
+  "Create a default file icon."
+  (modern-icons-create-icon "symbol-icons" "workspace.svg"))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Public functions
 
